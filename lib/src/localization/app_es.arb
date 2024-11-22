@@ -1,0 +1,252 @@
+{
+  "appTitle": "Flesan",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "generalError": "Ocurrió un error",
+  "@generalError": {
+    "description": "General error"
+  },
+  "docTypeOrder": "Pedido",
+  "@docTypeOrder": {
+    "description": "Doc type Order"
+  },
+  "docTypeOffer": "Oferta",
+  "@docTypeOffer": {
+    "description": "Doc type Offer"
+  },
+  "docTypeEntry": "Entrada de mercancía",
+  "@docTypeEntry": {
+    "description": "Doc type entry"
+  },
+  "docTypeInvoice": "Factura",
+  "@docTypeInvoice": {
+    "description": "Doc type invoice"
+  },
+  "docTypeAdvanceInvoice": "Factura de anticipo",
+  "@docTypeAdvanceInvoice": {
+    "description": "Doc type advance invoice"
+  },
+  "welcomeTo": "Bienvenido a",
+  "@welcomeTo": {
+    "description": "The text of companyWelcome page"
+  },
+  "welcomeDescription": "Aprueba Ofertas, Pedidos, Entradas de Mercancia y Facturas según los flujos definidos en SAP.",
+  "@welcomeDescription": {
+    "description": "Welcome Description"
+  },
+  "letsStartBtn": "Comencemos",
+  "@letsStartBtn": {
+    "description": "The text of the letStart button"
+  },
+  "select_company": "Elige la empresa",
+  "@select_company": {
+    "description": "The title of the select company page"
+  },
+  "loginUsername": "Usuario",
+  "@loginName": {
+    "description": "The hint text for the name"
+  },
+  "loginPassword": "Contraseña",
+  "@loginPassword": {
+    "description": "The hint text for the password"
+  },
+  "loginBtn": "Login",
+  "@loginBtn": {
+    "description": "The text for the login button"
+  },
+  "loginGoogleBtn": "Continuar con Google",
+  "@loginGoogleBtn": {
+    "description": "Login with Google But"
+  },
+  "login_error_message": "Error en Login",
+  "@login_error_message": {
+    "description": "Message shown when a login Error happens"
+  },
+  "cancelBtn": "Cancelar",
+  "@cancelBtn": {
+    "description": "The text of cancel button"
+  },
+  "acceptBtn": "Aceptar",
+  "@acceptBtn": {
+    "description": "The text of accept button"
+  },
+  "logoutTitle": "Cerrar sesión",
+  "@logoutTitle": {
+    "description": "The text of logout popup page"
+  },
+  "logoutDescription": "¿Está seguro de salir?",
+  "@logoutDescription": {
+    "description": "the title of confirm logout page"
+  },
+  "homeScreenTitle": "Hola",
+  "@homeScreenTitle": {
+    "description": "the text of the title homescreen page"
+  },
+  "homeScreenDescription": "¿Qué tenemos hoy?",
+  "@homeScreenDescription": {
+    "description": "The text of the first description of homescreen page"
+  },
+  "homeDocsPending": "Pendientes",
+  "@homeDocsPending": {
+    "description": "The text of the second button of homescreen page"
+  },
+  "homeDocsApproved": "Aprobados",
+  "@homeDocsApproved": {
+    "description": "The text of the third button of homescreen page"
+  },
+  "homeDocsRejected": "Rechazados",
+  "@homeDocsRejected": {
+    "description": "The text of the fourth button of homescreen page"
+  },
+  "homeDocPending": "Pendiente",
+  "@homeDocPending": {
+    "description": "The text of the second button of homescreen page"
+  },
+  "homeDocApproved": "Aprobado",
+  "@homeDocApproved": {
+    "description": "The text of the third button of homescreen page"
+  },
+  "homeDocRejected": "Rechazado",
+  "@homeDocRejected": {
+    "description": "The text of the fourth button of homescreen page"
+  },
+  "homeNoDocs": "No hay documentos",
+  "@homeNoDocs": {
+    "description": "Message to show when there's no documents to list"
+  },
+  "homeProject": "Proyecto:",
+  "@homeProject": {
+    "description": "Label for Project field"
+  },
+  "homeProvider": "Proveedor:",
+  "@homeProvider": {
+    "description": "Label for Provider field"
+  },
+  "docDetailTitle": "Resumen de {type}",
+  "@docDetailTitle": {
+    "description": "Title of the document detail screen",
+    "placeholders": {
+      "type": {
+        "type": "String",
+        "example": "Pedido"
+      }
+    }
+  },
+  "docSupplierCode": "Proveedor",
+  "@docSupplierCode": {
+    "description": "The text of the first description of order summary page"
+  },
+  "docSupplierName": "Nombre",
+  "@docSupplierName": {
+    "description": "The text of the second description of order summary page"
+  },
+  "docContact": "Quién genera",
+  "@docContact": {
+    "description": "The text of the third description of order summary page"
+  },
+  "docPayCondition": "Condición de pago",
+  "@docPayCondition": {
+    "description": "The text of the fourth description of order summary page"
+  },
+  "docCostCenter": "Centro de costo",
+  "@docCostCenter": {
+    "description": "The text of the fifth description of order summary page"
+  },
+  "docAccountingDate": "Fecha de contabilización",
+  "@docAccountingDate": {
+    "description": "The text of the sixth description of order summary page"
+  },
+  "docDeliveryDate": "Fecha de entrega",
+  "@docDeliveryDate": {
+    "description": "The text of the seventh description of order summary page"
+  },
+  "docDocumentDate": "Fecha de documento",
+  "@docDocumentDate": {
+    "description": "The text of the eighth description of order summary page"
+  },
+  "docPurchaseType": "Tipo de compra",
+  "@docPurchaseType": {
+    "description": "The text of the eighth description of purchase type"
+  },
+  "docItems": "Items",
+  "@docItems": {
+    "description": "The text of the second title of order summary page"
+  },
+  "docItemQuantity": "Cant",
+  "@docItemQuantity": {
+    "description": "The text of the first description of order summary page"
+  },
+  "docItemDescription": "Descripción",
+  "@docItemDescription": {
+    "description": "The text of the second description of order summary page"
+  },
+  "docItemUnitPrice": "Precio unit",
+  "@docItemUnitPrice": {
+    "description": "The text of the third description or order summary page"
+  },
+  "docItemTotal": "Importe",
+  "@docItemTotal": {
+    "description": "The text of the fourth description of order summary page"
+  },
+  "docTotalBefore": "Total antes del descuento",
+  "@docTotalBefore": {
+    "description": "The text of the fifth description of order summary page"
+  },
+  "docDiscount": "Descuento",
+  "@docDiscount": {
+    "description": "The text of the sixth description of order summary page"
+  },
+  "docTax": "Impuesto",
+  "@docTax": {
+    "description": "The text of the seventh description of order summary page"
+  },
+  "docTotal": "Total",
+  "@docTotal": {
+    "description": "The text of the eighth description of order summary page"
+  },
+  "docNotes": "Notas",
+  "@docNotes": {
+    "description": "The text of the third title of order summary page"
+  },
+  "docNotePlaceholder": "Escribe la nota aquí",
+  "@docNotePlaceholder": {
+    "description": "The text of the first description of order summary page"
+  },
+  "docNoNoteError": "Debe ingresar una nota",
+  "@docNoNoteError": {
+    "description": "Error text shown when a required note is empty"
+  },
+  "docApproveTitle": "Aprobar el documento",
+  "@docApproveTitle": {
+    "description": "The text of the title of pop-up order summary page"
+  },
+  "docApproveDescription": "¿Está seguro que desea aprobar el documento?",
+  "@docApproveDescription": {
+    "description": "The text of the description of pop-up order summary page"
+  },
+  "docRejectTitle": "Rechazar el documento",
+  "@docRejectTitle": {
+    "description": "The text of the second title of pop-up order summary page"
+  },
+  "docRejectDescription": "¿Está seguro que desea rechazar el documento?",
+  "@docRejectDescription": {
+    "description": "The text of the second description of pop-up order summary page"
+  },
+  "attachmentsTitle": "Archivos adjuntos",
+  "@attachmentsTitle": {
+    "description": "The text of the header of attachedfiles page"
+  },
+  "attachmentNoData": "No hay data en el adjunto seleccionado",
+  "@attachmentNoData": {
+    "description": "Error text when there's no data for a given attachment"
+  },
+  "docApprovedConfirmation": "Su documento fue aprobado con éxito.",
+  "@docApprovedConfirmation": {
+    "description": "Confirmation text when the document was approved"
+  },
+  "docRejectedConfirmation": "Su documento fue rechazado con éxito.",
+  "@docRejectedConfirmation": {
+    "description": "Confirmation text when the document was rejected"
+  }
+}
