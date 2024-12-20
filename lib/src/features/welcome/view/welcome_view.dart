@@ -1,4 +1,5 @@
 import 'package:data_repository/data_repository.dart';
+import 'package:flesan_approvals/src/features/flesan_obras/flesan_obras_page.dart';
 import 'package:flesan_approvals/src/features/select_company/view/select_company_page.dart';
 import 'package:flesan_approvals/src/localization/localizations.dart';
 import 'package:flesan_approvals/src/ui_commons/buttons/button_widget.dart';
@@ -22,29 +23,41 @@ class WelcomeView extends StatelessWidget {
       await googleSignIn.signOut();
       if (account != null) {
         final responseDwh = await _findUser(account.email);
-        if(responseDwh == 200){
-        // ignore: use_build_context_synchronously
-        Navigator.of(context).pushReplacementNamed(SelectCompanyPage.routeName);
-        Fluttertoast.showToast(
-            msg: "¡Bienvenido ${account.displayName}!",
-            toastLength: Toast.LENGTH_SHORT,
-            gravity: ToastGravity.BOTTOM,
-            timeInSecForIosWeb: 1,
-            backgroundColor: Colors.green,
-            textColor: Colors.white,
-            fontSize: 16.0);
-        }else{
+        if (responseDwh == 200) {
+          // ignore: use_build_context_synchronously
+          Navigator.of(context)
+              .pushReplacementNamed(SelectCompanyPage.routeName);
           Fluttertoast.showToast(
+              msg: "¡Bienvenido ${account.displayName}!",
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.BOTTOM,
+              timeInSecForIosWeb: 1,
+              backgroundColor: Colors.green,
+              textColor: Colors.white,
+              fontSize: 16.0);
+        } else {
+          Navigator.of(context)
+              .pushReplacementNamed(FlesanObrasPage.routeName);
+          Fluttertoast.showToast(
+              msg: "¡Bienvenido ${account.displayName}!",
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.BOTTOM,
+              timeInSecForIosWeb: 1,
+              backgroundColor: Colors.green,
+              textColor: Colors.white,
+              fontSize: 16.0);
+          /*  Fluttertoast.showToast(
           msg: "¡Usted no esta autorizado!",
           toastLength: Toast.LENGTH_SHORT,
           gravity: ToastGravity.BOTTOM,
           timeInSecForIosWeb: 1,
           backgroundColor: Colors.red,
           textColor: Colors.white,
-          fontSize: 16.0);
+          fontSize: 16.0); */
         }
       }
     } catch (error) {
+      print(error);
       Fluttertoast.showToast(
           msg: "¡Existió un problema con la autenticación!",
           toastLength: Toast.LENGTH_SHORT,

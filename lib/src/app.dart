@@ -1,6 +1,7 @@
 import 'package:flesan_approvals/src/features/attachment/view/attachment_page.dart';
 import 'package:flesan_approvals/src/features/document_detail/view/document_detail_page.dart';
 import 'package:flesan_approvals/src/features/attachments/view/attachments_page.dart';
+import 'package:flesan_approvals/src/features/flesan_obras/flesan_obras_page.dart';
 import 'package:flesan_approvals/src/features/welcome/view/welcome_page.dart';
 import 'package:flesan_approvals/src/features/welcome_company/view/welcome_company_page.dart';
 import 'package:flesan_approvals/src/localization/localizations.dart';
@@ -42,6 +43,7 @@ class App extends StatelessWidget {
         DocumentDetailPage.routeName: (context) => const DocumentDetailPage(),
         AttachmentsPage.routeName: (context) => const AttachmentsPage(),
         AttachmentPage.routeName: (context) => const AttachmentPage(),
+        FlesanObrasPage.routeName: (context) => const FlesanObrasPage(),
       },
     );
   }
