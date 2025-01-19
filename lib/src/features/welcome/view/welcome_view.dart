@@ -21,6 +21,7 @@ class WelcomeView extends StatelessWidget {
       final GoogleSignIn googleSignIn = GoogleSignIn();
       final GoogleSignInAccount? account = await googleSignIn.signIn();
       await googleSignIn.signOut();
+
       if (account != null) {
         final responseDwh = await _findUser(account.email);
         if (responseDwh == 200) {
@@ -36,8 +37,8 @@ class WelcomeView extends StatelessWidget {
               textColor: Colors.white,
               fontSize: 16.0);
         } else {
-          Navigator.of(context)
-              .pushReplacementNamed(FlesanObrasPage.routeName);
+          // ignore: use_build_context_synchronously
+          Navigator.of(context).pushReplacementNamed(FlesanObrasPage.routeName);
           Fluttertoast.showToast(
               msg: "¡Bienvenido ${account.displayName}!",
               toastLength: Toast.LENGTH_SHORT,
@@ -46,18 +47,9 @@ class WelcomeView extends StatelessWidget {
               backgroundColor: Colors.green,
               textColor: Colors.white,
               fontSize: 16.0);
-          /*  Fluttertoast.showToast(
-          msg: "¡Usted no esta autorizado!",
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.BOTTOM,
-          timeInSecForIosWeb: 1,
-          backgroundColor: Colors.red,
-          textColor: Colors.white,
-          fontSize: 16.0); */
         }
       }
     } catch (error) {
-      print(error);
       Fluttertoast.showToast(
           msg: "¡Existió un problema con la autenticación!",
           toastLength: Toast.LENGTH_SHORT,
@@ -78,11 +70,11 @@ class WelcomeView extends StatelessWidget {
       final response = await dio.post(url, data: {
         'email': email,
       });
-
-      if (response.statusCode == 200) {
+      final responseData = response.data;
+      if (responseData['status'] == 200) {
         return 200;
       } else {
-        return response.statusCode ?? 500;
+        return responseData['status'] ?? 500;
       }
     } catch (e) {
       return 500;

@@ -8,7 +8,7 @@ import 'src/app.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  final DataRepository dataRepository = FlesanDataRepository(host: 'http://34.74.255.87:8480');
+  final DataRepository dataRepository = FlesanDataRepository(host: Environment.host);
 
   runApp(RepositoryProvider<DataRepository>(
     create: (context) => dataRepository,
