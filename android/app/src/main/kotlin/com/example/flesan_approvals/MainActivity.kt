@@ -1,4 +1,4 @@
-package com.example.flesan_approvals
+package com.flesan_approvals
 
 import io.flutter.embedding.android.FlutterActivity
 
